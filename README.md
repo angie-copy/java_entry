@@ -118,6 +118,14 @@ Explanation:
 sorted sorts products by price (Stream<Product>).
 map extracts product names, transforming it into a Stream<String>.
 collect converts the stream into a List<String>.
+
+
+
+
+
+
+
+
 Exercise 5: Total Inventory Value by Color
 Problem: Calculate the total inventory value (price * amount) for each color.
 
@@ -136,6 +144,9 @@ Explanation:
 
 groupingBy groups products by color (Map<String, List<Product>>).
 summingDouble calculates the total value for each color, returning a Map<String, Double>.
+
+
+
 Exercise 6: Find Products Above Average Price
 Problem: Get a list of products that have a price higher than the average price.
 
@@ -160,6 +171,9 @@ Explanation:
 mapToDouble and average calculate the average price (OptionalDouble).
 filter keeps products above the average price (Stream<Product>).
 collect gathers the filtered products into a List<Product>.
+
+
+
 Exercise 7: Combine Products into a Summary String
 Problem: Create a single string summarizing all product names and their prices.
 
@@ -177,6 +191,10 @@ Explanation:
 
 map transforms each product into a string representation (Stream<String>).
 joining concatenates the strings with a comma separator, returning a String.
+
+
+
+
 Exercise 8: Partition Products by Sale Status
 Problem: Partition products into two groups: active for sale and not active for sale.
 
@@ -197,6 +215,9 @@ Explanation:
 
 partitioningBy separates products into two groups based on their sale status (Map<Boolean, List<Product>>).
 Each boolean key (true/false) corresponds to a list of products.
+
+
+
 Exercise 9: Find the First Product by Color
 Problem: Find the first product of a specific color (e.g., "Red").
 
